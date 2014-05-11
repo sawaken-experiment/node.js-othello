@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <title><%=title %></title>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/othello.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+  <%- script %>
+</head>
+<body>
+  <header>
+    <h2 id="message"><%-message %></h2>
+  </header>
+  <%- boardsvg %>
+  <footer>
+    <h3 id="foot"></h3>
+  </footer>
+</body>
+</html>
