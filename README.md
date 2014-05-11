@@ -1,6 +1,6 @@
 Node.js othello web application
 ===============================
-This is developed for my learning Node.js and websocket.
+This is developed for my short‐term learning Node.js and websocket.
 
 Description
 -----------
