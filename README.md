@@ -2,6 +2,8 @@ Node.js Othello web application
 ===============================
 This is developed for my short-term learning Node.js and websocket.
 
+![Gaming Screenshot](https://raw.githubusercontent.com/wiki/sawaken/node.js-othello/images/screenshot_small.png)
+
 Description
 -----------
 Very simple internet-Othello-battle application.
