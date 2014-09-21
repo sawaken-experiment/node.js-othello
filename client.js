@@ -1,5 +1,5 @@
 var latest_board;
-var socket = io.connect('http://localhost:8080/');
+var socket = io.connect('http://windmill.0am.jp:8080/');
 
 socket.emit('enter room');
 socket.on('accept', function(data){
@@ -52,7 +52,7 @@ function highlightDiff(player, x, y){
   }
 }
 
-function cleanUp(board){
+function highlightCleanUp(){
   $('.square').attr('style', 'fill:green');
 }
 
@@ -63,7 +63,7 @@ function clickbind(board, player){
     $square.click(function(){ sendHand(x, y); });
     $stone.click(function(){ sendHand(x, y); });
     $stone.mouseenter(function(){ highlightDiff(player, x, y); });
-    $stone.mouseleave(function(){ cleanUp(board); });
+    $stone.mouseleave(function(){ highlightCleanUp(); });
   });
 }
       
