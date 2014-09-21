@@ -1,5 +1,5 @@
 var latest_board;
-var socket = io.connect('http://windmill.0am.jp:8080/');
+var socket = io.connect('http://localhost:8080/');
 
 socket.emit('enter room');
 socket.on('accept', function(data){
